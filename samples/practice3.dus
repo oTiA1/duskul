@@ -1,0 +1,16 @@
+//g1954444 Shiki Ri 端末から読み込んだ整数から最大値を出力するプログラム
+proc main()
+    var max //最大値
+    var num //入力した数字
+    max = 0
+    input(num)
+
+    //maxとnumを比較し、大きい値を新しいmaxの値とする
+    while num <> 0 do
+        if max < num then
+            max = num
+        end
+        input(num)
+    end
+    println(max)
+end

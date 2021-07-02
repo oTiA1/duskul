@@ -1,0 +1,21 @@
+//g1954444 Shiki Ri 10進数を2進数に変換するプログラム
+proc main()
+    //変数宣言
+    var bin //2進値
+    var dec //10進値
+    var base //桁調整に使う変数
+   
+   //変数初期化
+    bin = 0
+    base = 1
+    input(dec)
+
+    //10進数を2進数に変換
+    while dec > 0 do
+        bin = bin + (dec % 2) * base
+        dec = dec / 2
+        base = base * 10
+    end
+    //2進数を出力
+    println(bin)
+end

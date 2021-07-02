@@ -1,0 +1,8 @@
+declare proc month(days, first)
+declare func dayOfWeek(yy, mm, d)
+
+proc main()
+    var a
+    var b
+    (a,b) = (b,a)
+end

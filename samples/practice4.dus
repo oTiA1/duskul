@@ -1,0 +1,12 @@
+//g1954444 Shiki Ri うるう年判定プログラム
+proc main()
+    var year //入力した年
+    input(year)
+
+    //うるう年判定
+    if year % 400 == 0 then print("うるう年です\n")
+    elsif year % 100 == 0 then print("うるう年ではありません\n")
+    elsif year % 4 == 0 then print("うるう年です\n")
+    else print("うるう年ではありません\n")
+    end
+end
